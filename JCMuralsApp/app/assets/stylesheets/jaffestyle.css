@@ -1,0 +1,97 @@
+/*--------------------------------overall body style--------------------------------*/
+body {
+  font-family: 'Nunito', sans-serif;
+  font-size: 14px;
+  background-image: url(../bkgd.jpg);
+  background-position: center, top;
+  background-size: auto, 100%;
+}
+
+/*--------------------------------text styling--------------------------------*/
+h4{
+  padding: 0px;
+  margin: 0px;
+}
+
+h5{
+  padding: 0px;
+  margin: 0px;
+}
+
+h6{
+  padding: 0px;
+  margin: 0px;
+}
+
+a {
+  color: rgb(136,41,87);
+  text-decoration: none;
+}
+
+a:hover{
+  color: rgb(0,108,128);
+}
+
+/*--------------------------------header and logo styling--------------------------------*/
+
+.head {
+    text-align: right;
+    padding-right: 10px;
+    padding-bottom: 0px;
+}
+
+.logo {
+  width:50%;
+}
+
+.login {
+  background: -webkit-linear-gradient(left top,rgba(0,108,128,0.75),rgba(136,41,87,0.75));   /*Safari 5.1-6*/
+  background: -o-linear-gradient(left top,rgba(0,108,128,0.75),rgba(136,41,87,0.75));    /*Opera 11.1-12*/
+  background: -moz-linear-gradient(left top,rgba(0,108,128,0.75),rgba(136,41,87,0.75));    /*Fx 3.6-15*/
+  background: linear-gradient(left top,rgba(0,108,128,0.75),rgba(136,41,87,0.75));    /*Standard*/
+  border-radius: 10px;
+  border: 4px solid #a6a6a6;
+  padding: 10px;
+  position: relative;
+  text-align: left;
+}
+
+/*--------------------------------mural list veiw styling--------------------------------*/
+
+.mural {
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+  border: 4px solid #a6a6a6;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.mural_img {
+  border-radius: 10px;
+  border: 4px solid #a6a6a6;
+  margin-bottom: 10px;
+  width: 95%;
+  position: relative;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.info{
+    margin-right: 5px;
+}
+
+.title {
+  font-weight: 700;
+}
+
+.button {
+  background-color: rgba(0,108,128,0.75);
+  border: 2px solid #a6a6a6;
+}
+
+/*--------------------------------single mural  veiw styling--------------------------------*/
+
+.single_mural{
+  <
+}

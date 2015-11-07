@@ -1,0 +1,13 @@
+<%= form_for @mural do |form| %>
+  Title: <%= form.text_field :title %></br>
+  Artist: <%= form.text_field :artist %></br>
+  Artist Website: <%= form.text_field :website %></br>
+  Year: <%= form.number_field :year %></br>
+  Description: <%= form.text_field :description %></br>
+  Neighborhood <%= form.text_field :neighborhood %></br>
+  Address: <%= form.text_field :address %></br>
+  Image: <%= form.text_field :image %></br>
+
+  <%= form.submit %>
+  <br>
+<% end %>

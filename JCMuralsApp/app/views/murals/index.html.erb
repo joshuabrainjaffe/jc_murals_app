@@ -1,0 +1,19 @@
+<div class="ten offset-by-one columns">
+  <% @murals.each do |m| %>
+    <div class="mural">
+      <div class="info four columns">
+      <h4 class="title"><%= m.title %></h4>
+        <a href="<%= m.website %>"><h5><%= m.artist %></h5></a>
+        <h6><%= m.year %></h6>
+      </div>
+      <div>
+        <h5><strong><%= m.neighborhood %></strong></h5>
+          <h6><%= m.address %></h6>
+          <br>
+          <%= button_to('Expand', mural_path(m.id), method: :get, :class => "button") %></button>
+      </div>
+    </div>
+      <% end %>
+
+    <%= button_to('Add New Mural', new_mural_path, method: :get, :class => "button") %>
+</div>

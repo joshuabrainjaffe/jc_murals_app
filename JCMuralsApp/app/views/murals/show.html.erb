@@ -1,0 +1,18 @@
+<div class="ten offset-by-one columns">
+    <div class="mural">
+      <img class="mural_img" src="../../<%= @mural.image %>" >
+      <div class="info four columns">
+        <h4 class="title"><%= @mural.title %></h4>
+        <a href="<%= @mural.website %>"><h5><%= @mural.artist %></h5></a>
+        <h6><%= @mural.year %></h6>
+      </div>
+      <div class="single_mural">
+        <h5><strong><%= @mural.neighborhood %></strong></h5>
+          <h6><%= @mural.address %></h6>
+          <br>
+          <p><%= @mural.description %></p>
+          <%= button_to('Edit Mural', edit_mural_path, method: :get, :class => "button") if current_user.id == @mural.users_id %>
+      </div>
+    </div>
+      <%= button_to('Back To Mural List', murals_path, method: :get, :class => "button") %>
+</div>
