@@ -1,12 +1,15 @@
-<div class="ten offset-by-one columns">
+<div class="eight offset-by-two columns">
   <% @murals.each do |m| %>
     <div class="mural">
+      <div class="mural_thumb">
+        <a href="<%= mural_path(m.id) %>"><img class="thumbnail" src="<%= m.image %>">
+      </div>
       <div class="info four columns">
-      <h4 class="title"><%= m.title %></h4>
+      <h4 class="title"><%= m.title %></h4></a>
         <a href="<%= m.website %>"><h5><%= m.artist %></h5></a>
         <h6><%= m.year %></h6>
       </div>
-      <div>
+      <div class="details">
         <h5><strong><%= m.neighborhood %></strong></h5>
           <h6><%= m.address %></h6>
           <br>

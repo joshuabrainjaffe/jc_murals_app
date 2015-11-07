@@ -1,13 +1,42 @@
 <%= form_for @mural do |form| %>
-  Title: <%= form.text_field :title %></br>
-  Artist: <%= form.text_field :artist %></br>
-  Artist Website: <%= form.text_field :website %></br>
-  Year: <%= form.number_field :year %></br>
-  Description: <%= form.text_field :description %></br>
-  Neighborhood <%= form.text_field :neighborhood %></br>
-  Address: <%= form.text_field :address %></br>
-  Image: <%= form.text_field :image %></br>
+<div class="ten offset-by-one columns">
+  <table class="u-full-width">
+    <tbody>
+      <tr>
+        <td>Title</td>
+        <td><%= form.text_field :title %></td>
+      </tr>
+      <tr>
+        <td>Artist</td>
+        <td><%= form.text_field :artist %></td>
+      </tr>
+      <tr>
+        <td>Artist Website</td>
+        <td><%= form.text_field :website %></td>
+      </tr>
+      <tr>
+        <td>Year</td>
+        <td><%= form.number_field :year %></td>
+      </tr>
+      <tr>
+        <td>Description</td>
+        <td><%= form.text_field :description %></td>
+      </tr>
+      <tr>
+        <td>Neighborhood</td>
+        <td><%= form.text_field :neighborhood %></td>
+      </tr>
+      <tr>
+        <td>Address</td>
+        <td><%= form.text_field :address %></td>
+      </tr>
+      <tr>
+        <td>Image</td>
+        <td><%= form.text_field :image %></td>
+      <tr>
+      <td><%= form.submit %></td>
+      </tr>
+  </tbody>
+</div>
 
-  <%= form.submit %>
-  <br>
 <% end %>
