@@ -15,12 +15,6 @@ class MuralsController < ApplicationController
    @mural = Mural.new
  end
 
-  # def create
-  #   @user = User.find_by(id: current_user.id)
-  #   @mural = Mural.create(mural_params, :users_id => @user.id)
-  #   redirect_to murals_path
-  # end
-
 def create
     @user = User.find_by(id: current_user.id)
 
@@ -32,7 +26,7 @@ def create
     neighborhood = mural_params[:neighborhood]
     address = mural_params[:address]
     image = mural_params[:image]
-    
+
     @mural = Mural.create(:title => title, :artist => artist, :website => website, :year => year, :description => description, :neighborhood => neighborhood, :address => address, :users_id => @user.id, :image => image)
     redirect_to murals_path
   end

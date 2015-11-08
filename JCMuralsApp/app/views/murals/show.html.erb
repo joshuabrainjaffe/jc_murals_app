@@ -12,8 +12,9 @@
           <h6><%= @mural.address %></h6>
           <br>
           <p><%= @mural.description %></p>
-          <%= button_to('Edit Mural', edit_mural_path, method: :get, :class => "button") if current_user.id == @mural.users_id %>
-          <%= button_to('Delete Mural', @wine, method: :delete, :class => "button") if current_user.id == @mural.users_id %>
+          <% if current_user == nil then current_user.id = 0 %>
+          <%= if current_user.id == @mural.users_id then button_to('Edit Mural', edit_mural_path, method: :get, :class => "button")  end%>
+          <%= button_to('Delete Mural', @mural, method: :delete, :class => "button")  %>
       </div>
     </div>
 </div>

@@ -13,10 +13,9 @@
         <h5><strong><%= m.neighborhood %></strong></h5>
           <h6><%= m.address %></h6>
           <br>
-          <%= button_to('Expand', mural_path(m.id), method: :get, :class => "button") %></button>
+          <button><%= link_to('Expand', mural_path(m.id)) %></button>
       </div>
     </div>
       <% end %>
-
     <%= button_to('Add New Mural', new_mural_path, method: :get, :class => "button") %>
 </div>
