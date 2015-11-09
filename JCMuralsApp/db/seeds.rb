@@ -11,10 +11,11 @@ murals = Mural.create([
       year: 2015,
       artist: 'Shepard Fairey',
       website: 'http://www.obeygiant.com/',
-      description: 'The mural is designed to symbolize the renaissance and the cultural wave that Jersey City is riding while also acknowledging its waterfront location and the beauty and power of Mother Nature.',
+      description: 'This mural is designed to symbolize the renaissance and the cultural wave that Jersey City is riding while also acknowledging its waterfront location and the beauty and power of Mother Nature.',
       neighborhood: 'Downtown',
       address: 'Grove and Columbus',
       is_mural: true,
+      image: 'the_jc_wave.jpg',
       users_id: 2},
 
       {title: 'Things Fall Apart',
@@ -25,6 +26,7 @@ murals = Mural.create([
         neighborhood: 'Communipaw',
         address: 'Whiton and Johnston',
         is_mural: true,
+        image: 'things_fall_apart.jpg',
         users_id: 2},
 
         {title: 'Big City Dreams',
@@ -35,5 +37,6 @@ murals = Mural.create([
           neighborhood: 'Downtown',
           address: 'Columbus and Coles',
           is_mural: true,
+          image: 'big_city_dreams.jpg',
           users_id: 2},
   ])

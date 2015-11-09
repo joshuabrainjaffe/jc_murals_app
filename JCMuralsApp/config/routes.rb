@@ -2,7 +2,6 @@ Rails.application.routes.draw do
 
   devise_for :users, :controllers => { registrations: "registrations" }
   resources :murals
-  resources :locations
 
   root 'murals#index'
 
@@ -30,13 +29,5 @@ Rails.application.routes.draw do
 #                                        PATCH  /murals/:id(.:format)          murals#update
 #                                        PUT    /murals/:id(.:format)          murals#update
 #                                        DELETE /murals/:id(.:format)          murals#destroy
-#                        locations GET    /locations(.:format)           locations#index
-#                                       POST   /locations(.:format)           locations#create
-#                 new_location GET    /locations/new(.:format)       locations#new
-#                  edit_location GET    /locations/:id/edit(.:format)  locations#edit
-#                          location GET    /locations/:id(.:format)       locations#show
-#                                       PATCH  /locations/:id(.:format)       locations#update
-#                                       PUT    /locations/:id(.:format)       locations#update
-#                                       DELETE /locations/:id(.:format)       locations#destroy
 
 end

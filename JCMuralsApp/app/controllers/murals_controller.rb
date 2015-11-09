@@ -57,10 +57,6 @@ def create
       params.require(:mural).permit(:title, :artist, :website, :year, :description, :neighborhood, :address, :image)
   end
 
-  # def mural_params
-  #   params.require(:mural).permit(:title, :artist, :website, :year, :description, :neighborhood, :address, :image)
-  # end
-
   def proper_user
     mural = Mural.find(params[:id])
     if current_user.id != mural.users_id
